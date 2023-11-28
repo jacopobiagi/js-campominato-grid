@@ -13,35 +13,34 @@
     <title>Campo minato</title>
 </head>
 <body>
-    <div class="d-flex flex-column jutify-content-between h-100 w-100">
-        <header class="w-100 d-flex jutify-content-between">
-            <div class="w-50 h-100 d-flex">
-                <div class="logo h-100">
-                    <img src="mobile-logo.png" alt="logo" class="w-100 h-100">
-                </div>
-                <h1 class="d-flex align-items-center">CAMPO MINATO</h1>
+    <header class="w-100 d-flex jutify-content-between">
+        <div class="w-50 h-100 d-flex">
+            <div class="logo h-100">
+                <img src="mobile-logo.png" alt="logo" class="w-100 h-100">
             </div>
-            <div class="w-50 d-flex align-items-center justify-content-around">
-                <label for="selectLevel">Difficoltà:</label>
-                <select class="form-select" aria-label="Default select example" style="width: 50%;" id="selectLevel">
-                    <option value="1">difficile</option>
-                    <option value="2">medio</option>
-                    <option value="3">facile</option>
-                </select>
-                <button id="start">Gioca</button>
-            </div>
-        </header>
+            <h1 class="d-flex align-items-center">CAMPO MINATO</h1>
+        </div>
+        <div class="w-50 d-flex align-items-center justify-content-around">
+            <label for="selectLevel">Difficoltà:</label>
+            <select class="form-select" aria-label="Default select example" style="width: 50%;" id="selectLevel">
+                <option value="1">difficile</option>
+                <option value="2">medio</option>
+                <option value="3">facile</option>
+            </select>
+            <button id="start">Gioca</button>
+        </div>
+    </header>
+
+    <main class="w-100 d-flex justify-content-center align-items-center">
+
+        <div class="container d-none" id="gridContainer"></div>
+    </main>
+
+    <footer>
+        <span>made width Boolean</span>
+    </footer>
     
-        <main class="w-100 d-flex justify-content-center align-items-center">
-    
-            <div class="container d-none" id="gridContainer"></div>
-        </main>
-    
-        <footer>
-            <span>made width Boolean</span>
-        </footer>
-    
-    </div>
+
     
     <script src="script.js"></script>
 </body>

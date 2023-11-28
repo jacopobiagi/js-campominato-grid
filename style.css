@@ -23,7 +23,7 @@ select{
 }
 
 main{
-    height: calc(100% - 150px);
+    height: calc(100vh - 150px);
     background-color: rgb(127, 255, 212);
 }
 
