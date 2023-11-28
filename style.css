@@ -23,7 +23,7 @@ select{
 }
 
 main{
-    min-height: 600px;
+    height: calc(100% - 150px);
     background-color: rgb(127, 255, 212);
 }
 
@@ -35,13 +35,26 @@ main{
 }
 
 .content{
-    width: 10%;
-    height: 10%;
     border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+.content-1{
+    width: 10%;
+    height: 10%;
+}
+
+.content-2{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.content-3{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
 }
 
 footer{
