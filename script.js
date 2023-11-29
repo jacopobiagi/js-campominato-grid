@@ -8,6 +8,7 @@ start.addEventListener("click",
 
     ()=>{
         let cond = 0;
+        let classe = "";
         let level = document.getElementById("selectLevel").value;
         grid.innerHTML = "";
         grid.classList.remove("d-none");
@@ -16,19 +17,21 @@ start.addEventListener("click",
 
         //1 CASE: LIVELLO DIFFICIEL
         if(level == 1){
-           
+        
             cond = 100;
+            classe = "content-1";
 
         // 2 CASE: LIVELLO MEDIO
         }else if(level == 2){
-
            
             cond = 81;
+            classe= "content-2";
 
         //3 CASE: LIVELLO FACILE
         }else{
 
             cond = 49;
+            classe = "content-3";
         }
 
 
@@ -36,15 +39,7 @@ start.addEventListener("click",
 
             let element = document.createElement("div");
             element.classList.add("content");
-            
-            if(cond == 100){
-                element.classList.add("content-1")
-            }else if(cond == 81){
-                element.classList.add("content-2")
-            }else{
-                element.classList.add("content-3")
-            }
-            
+            element.classList.add(classe);    
             element.innerHTML = i
         
             element.addEventListener("click",
